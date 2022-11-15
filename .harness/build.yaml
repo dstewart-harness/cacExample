@@ -28,7 +28,7 @@ pipeline:
                     connectorRef: account.DockerHubDiego
                     image: alpine:latest
                     shell: Sh
-                    command: echo "Hello"
+                    command: echo "Hi"
           platform:
             os: Linux
             arch: Amd64
