@@ -28,7 +28,7 @@ pipeline:
                     connectorRef: account.DockerHubDiego
                     image: alpine:latest
                     shell: Sh
-                    command: echo "Hi"
+                    command: echo "Pipeline new branch"
           platform:
             os: Linux
             arch: Amd64
