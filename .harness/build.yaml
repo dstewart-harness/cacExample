@@ -8,7 +8,7 @@ pipeline:
     ci:
       codebase:
         connectorRef: dstewartgh
-        repoName: cacExample
+        repoName: spring-petclinic
         build: <+input>
   stages:
     - stage:
@@ -35,3 +35,4 @@ pipeline:
           runtime:
             type: Cloud
             spec: {}
+        variables: []
