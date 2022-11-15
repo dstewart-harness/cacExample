@@ -1,0 +1,14 @@
+inputSet:
+  identifier: "InputSet1"
+  pipeline:
+    identifier: "CaC_Pipeline"
+    properties:
+      ci:
+        codebase:
+          build:
+            type: "branch"
+            spec:
+              branch: "main"
+  name: "InputSet1"
+  orgIdentifier: "SE_Sandbox"
+  projectIdentifier: "DavidStewart"
