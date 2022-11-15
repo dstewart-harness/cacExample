@@ -28,7 +28,7 @@ pipeline:
                     connectorRef: account.DockerHubDiego
                     image: alpine:latest
                     shell: Sh
-                    command: echo "Hi"
+                    command: echo "build for Docs branch"
           platform:
             os: Linux
             arch: Amd64
