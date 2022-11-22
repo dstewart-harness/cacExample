@@ -25,7 +25,7 @@ pipeline:
                   name: Echo
                   identifier: Echo
                   spec:
-                    connectorRef: account.DockerHubDiego
+                    connectorRef: dstewart_docker_hub
                     image: alpine:latest
                     shell: Sh
                     command: echo "Hi"
