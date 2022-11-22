@@ -14,7 +14,6 @@ pipeline:
     - stage:
         name: "Build "
         identifier: Build
-        description: ""
         type: CI
         spec:
           cloneCodebase: true
@@ -35,4 +34,3 @@ pipeline:
           runtime:
             type: Cloud
             spec: {}
-        variables: []
