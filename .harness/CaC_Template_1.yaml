@@ -1,0 +1,39 @@
+template:
+  name: CaC Template
+  type: Pipeline
+  projectIdentifier: DavidStewart
+  orgIdentifier: SE_Sandbox
+  spec:
+    properties:
+      ci:
+        codebase:
+          connectorRef: dstewartgh
+          repoName: spring-petclinic
+          build: <+input>
+    stages:
+      - stage:
+          name: "Build "
+          identifier: Build
+          type: CI
+          spec:
+            cloneCodebase: true
+            execution:
+              steps:
+                - step:
+                    type: Run
+                    name: Echo
+                    identifier: Echo
+                    spec:
+                      connectorRef: dstewart_docker_hub
+                      image: alpine:latest
+                      shell: Sh
+                      command: echo "Hi"
+            infrastructure:
+              type: KubernetesDirect
+              spec:
+                connectorRef: account.k8scidemo
+                namespace: konr-se-sandbox
+                nodeSelector: {}
+                os: Linux
+  identifier: CaC_Template
+  versionLabel: "1"
