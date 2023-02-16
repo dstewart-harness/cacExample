@@ -28,10 +28,9 @@ pipeline:
                     image: alpine:latest
                     shell: Sh
                     command: echo "Hello"
-          infrastructure:
-            type: KubernetesDirect
-            spec:
-              connectorRef: account.k8scidemo
-              namespace: konr-se-sandbox
-              nodeSelector: {}
-              os: Linux
+          platform:
+            os: Linux
+            arch: Arm64
+          runtime:
+            type: Cloud
+            spec: {}
