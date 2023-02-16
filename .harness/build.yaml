@@ -27,7 +27,7 @@ pipeline:
                     connectorRef: dstewart_docker_hub
                     image: alpine:latest
                     shell: Sh
-                    command: echo "Hi"
+                    command: echo "Hello"
           infrastructure:
             type: KubernetesDirect
             spec:
