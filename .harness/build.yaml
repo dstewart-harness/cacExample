@@ -27,7 +27,7 @@ pipeline:
                     connectorRef: dstewart_docker_hub
                     image: alpine:latest
                     shell: Sh
-                    command: echo "Hello"
+                    command: echo "Helloooooo"
           platform:
             os: Linux
             arch: Arm64
