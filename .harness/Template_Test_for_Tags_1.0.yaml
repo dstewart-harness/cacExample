@@ -1,0 +1,13 @@
+template:
+  name: Template Test for Tags
+  identifier: Template_Test_for_Tags
+  versionLabel: "1.0"
+  type: Step
+  projectIdentifier: DavidStewart_Sandbox
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Run
+    spec:
+      shell: Sh
+      command: echo "hi"
